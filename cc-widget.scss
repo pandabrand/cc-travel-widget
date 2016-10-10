@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700,800');
+$sans-light: "Open Sans";
+$white: #FFF;
+$blackish: #090a0a;
+$table-grey: #ddd;
+$callout-grey: #ccc;
+$link-grey: #9d9d9d;
+$link-hover-white: $white;
+$link-hover-grey: #333;
+$contrast-dark: #25346d;
+
+
+#cc-info {
+  display: block;
+  clear: both;
+  width: 250px;
+  height: 605px;
+  margin: 2em;
+  background-color: $white;
+  border: $blackish solid 1px;
+  font-family: $sans-light;
+  color: $blackish;
+  a {
+    color: $link-hover-grey;
+    &:visited {
+      color: $link-hover-grey;
+    }
+    &:hover, &:focus, &:active {
+      color: $callout-grey;
+    }
+  }
+  .cc-header {
+    text-align: center;
+    .cc-header-silver-image {
+      padding: 0 5px;
+      background-color: $blackish;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .cc-header-title {
+      font-weight: 700;
+    }
+    .cc-header-text {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .cc-google-map {
+    display: block;
+    .cc-map {
+      width: 250px;
+      height: 200px;
+    }
+  }
+  .location-wrapper {
+    overflow-y: scroll;
+    height: 300px;
+    width: 250px;
+    .cc-map-title {
+      font-size: 1.5em;
+      text-align: center;
+      display: block;
+      font-weight: 700;
+    }
+    .cc-location-table-row {
+      display: block;
+      margin: .25em;
+      border-top: $blackish solid 1px;
+      .cc-location-table-row-title {
+        padding: .25em;
+        font-weight: 700;
+      }
+      .cc-location-table-row-comment {
+        padding: .25em;
+        font-weight: 700;
+      }
+      .cc-location-table-row-desc {
+        padding: .25em;
+      }
+      .cc-location-table-row-addr {
+        font-size: .75em;
+        padding: .25em;
+      }
+      .cc-location-table-row-links {
+        .map-links {
+          font-family: $sans-light;
+          font-weight: 700;
+          display: inline-block;
+          margin-right: 3px;
+          padding: 3px;
+          text-align: center;
+          color: $contrast-dark;
+          font-size: .75em;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            .fa {
+              padding-left: 3px;
+            }
+          }
+        }
+      }
+    }
+    .cc-footer {
+      background-color: $blackish;
+      text-align: center;
+      color: $white;
+      .cc-footer-text {
+        font-size: .75em;
+        padding: 1em 0;
+        p {
+          margin: 0 !important;
+          a {
+            color: $callout-grey;
+            &:visited {
+              color: $callout-grey;
+            }
+            &:hover, &:active, &:focus {
+              color: $link-grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
