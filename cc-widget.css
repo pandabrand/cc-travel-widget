@@ -11,7 +11,7 @@
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: #FFF;
+  background-color: #090a0a;
   border: #090a0a solid 1px;
   font-family: "Open Sans";
   color: #090a0a; }
@@ -28,7 +28,8 @@
       #cc-info .flex-item {
         width: 49%; } }
   #cc-info .cc-header-item {
-    height: 100px; }
+    height: 100px;
+    color: #FFF; }
   #cc-info .cc-body {
     height: 300px; }
   #cc-info .cc-header-title {
@@ -38,9 +39,10 @@
   #cc-info .cc-google-map {
     display: block; }
     #cc-info .cc-google-map .cc-map {
-      height: 200px; }
+      height: 300px; }
   #cc-info .location-wrapper {
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    background-color: #FFF; }
     #cc-info .location-wrapper .cc-map-title {
       font-size: 1.5em;
       text-align: center;

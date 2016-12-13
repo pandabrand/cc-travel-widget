@@ -22,7 +22,7 @@ $contrast-dark: #25346d;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: $white;
+  background-color: $blackish;
   border: $blackish solid 1px;
   font-family: $sans-light;
   color: $blackish;
@@ -46,6 +46,7 @@ $contrast-dark: #25346d;
 
   .cc-header-item {
     height: 100px;
+    color: $white;
   }
 
   .cc-body {
@@ -65,11 +66,12 @@ $contrast-dark: #25346d;
     display: block;
     .cc-map {
       // width: 250px;
-      height: 200px;
+      height: 300px;
     }
   }
   .location-wrapper {
     overflow-y: scroll;
+    background-color: $white;
     // width: 250px;
     .cc-map-title {
       font-size: 1.5em;
