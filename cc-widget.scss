@@ -27,9 +27,9 @@ $contrast-dark: #25346d;
   font-family: $sans-light;
   color: $blackish;
   a {
-    color: $link-hover-grey;
+    color: $white;
     &:visited {
-      color: $link-hover-grey;
+      color: $white;
     }
     &:hover, &:focus, &:active {
       color: $callout-grey;
@@ -55,8 +55,14 @@ $contrast-dark: #25346d;
 
   .cc-header-title {
     font-weight: 700;
+    img {
+      width: 250px;
+    }
   }
   .cc-header-text {
+    h3 {
+      margin-top: 0;
+    }
     a {
       text-decoration: none;
     }

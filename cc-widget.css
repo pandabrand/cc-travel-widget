@@ -16,9 +16,9 @@
   font-family: "Open Sans";
   color: #090a0a; }
   #cc-info a {
-    color: #333; }
+    color: #FFF; }
     #cc-info a:visited {
-      color: #333; }
+      color: #FFF; }
     #cc-info a:hover, #cc-info a:focus, #cc-info a:active {
       color: #ccc; }
   #cc-info .flex-item {
@@ -34,6 +34,10 @@
     height: 300px; }
   #cc-info .cc-header-title {
     font-weight: 700; }
+    #cc-info .cc-header-title img {
+      width: 250px; }
+  #cc-info .cc-header-text h3 {
+    margin-top: 0; }
   #cc-info .cc-header-text a {
     text-decoration: none; }
   #cc-info .cc-google-map {
