@@ -14,6 +14,9 @@ $contrast-dark: #25346d;
   display: block;
   clear: both;
   width: 250px;
+  @media screen and (min-width: 700px) {
+    width: 500px;
+  }
   height: 605px;
   margin: 2em;
   background-color: $white;
