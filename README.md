@@ -5,7 +5,7 @@ If jQuery is not already added to your site add this line at the end before the 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>  
 
 Next add this right below the jQuery or right before the `</body>`  
-    `<script src="https://gist.github.com/pandabrand/df4532953d0666aeb08c9baadf9e1cfc.js"></script>`  
+    `<script src="https://cdn.rawgit.com/pandabrand/cc-travel-widget/master/cc-loader.js"></script>`  
 
 
 Where you would like the widget to show up add this `div` element  
