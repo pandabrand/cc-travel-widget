@@ -3,7 +3,7 @@
       var _css = document.createElement('link');
       _css.setAttribute('rel','stylesheet');
       _css.setAttribute('type','text/css');
-      _css.setAttribute('href', 'https://cdn.rawgit.com/pandabrand/cc-travel-widget/master/cc-widget.css');
+      _css.setAttribute('href', 'https://rawgit.com/pandabrand/cc-travel-widget/master/cc-widget.css');
       document.getElementsByTagName('head')[0].appendChild(_css);
 
       var _js = document.createElement('script');
