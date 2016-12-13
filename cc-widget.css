@@ -2,7 +2,7 @@
 #cc-info {
   max-width: 1124px;
   padding: 0;
-  margin: 0;
+  margin: 25px auto;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
@@ -31,7 +31,9 @@
   #cc-info .cc-header-item {
     height: 100px; }
   #cc-info .cc-body {
-    height: 300px; }
+    height: 300px;
+    border: solid 1px #ffe4c4;
+    margin-bottom: 10px; }
   #cc-info .cc-header-title {
     font-weight: 700; }
     #cc-info .cc-header-title img {

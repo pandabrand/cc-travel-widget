@@ -9,12 +9,12 @@ $link-grey: #9d9d9d;
 $link-hover-white: $white;
 $link-hover-grey: #333;
 $contrast-dark: #25346d;
-
+$cc-body-border: #ffe4c4;
 
 #cc-info {
   max-width: 1124px;
   padding: 0;
-  margin: 0;
+  margin: 25px auto;;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
@@ -52,6 +52,8 @@ $contrast-dark: #25346d;
 
   .cc-body {
     height: 300px;
+    border: solid 1px $cc-body-border;
+    margin-bottom: 10px;
   }
 
   .cc-header-title {
