@@ -11,14 +11,17 @@ $contrast-dark: #25346d;
 
 
 #cc-info {
-  display: block;
-  clear: both;
-  width: 250px;
-  @media screen and (min-width: 700px) {
-    width: 500px;
-  }
-  height: 605px;
-  margin: 2em;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
   background-color: $white;
   border: $blackish solid 1px;
   font-family: $sans-light;
@@ -32,25 +35,32 @@ $contrast-dark: #25346d;
       color: $callout-grey;
     }
   }
-  .cc-header {
-    text-align: center;
-    .cc-header-silver-image {
-      padding: 0 5px;
-      background-color: $blackish;
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-    .cc-header-title {
-      font-weight: 700;
-    }
-    .cc-header-text {
-      a {
-        text-decoration: none;
-      }
+
+  .flex-item {
+    padding: 5px;
+    flex: 1 100%;
+    @media all and (min-width: 568px) {
+      flex: 50%;
     }
   }
+
+  .cc-header-item {
+    height: 100px;
+  }
+
+  .cc-body {
+    height: 300px;
+  }
+
+  .cc-header-title {
+    font-weight: 700;
+  }
+  .cc-header-text {
+    a {
+      text-decoration: none;
+    }
+  }
+
   .cc-google-map {
     display: block;
     .cc-map {
@@ -60,7 +70,6 @@ $contrast-dark: #25346d;
   }
   .location-wrapper {
     overflow-y: scroll;
-    height: 300px;
     width: 250px;
     .cc-map-title {
       font-size: 1.5em;

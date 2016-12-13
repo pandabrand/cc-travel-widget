@@ -1,35 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700,800");
 #cc-info {
-  display: block;
-  clear: both;
-  width: 250px;
-  height: 605px;
-  margin: 2em;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
   background-color: #FFF;
   border: #090a0a solid 1px;
   font-family: "Open Sans";
   color: #090a0a; }
-  @media screen and (min-width: 700px) {
-    #cc-info {
-      width: 500px; } }
   #cc-info a {
     color: #333; }
     #cc-info a:visited {
       color: #333; }
     #cc-info a:hover, #cc-info a:focus, #cc-info a:active {
       color: #ccc; }
-  #cc-info .cc-header {
-    text-align: center; }
-    #cc-info .cc-header .cc-header-silver-image {
-      padding: 0 5px;
-      background-color: #090a0a; }
-      #cc-info .cc-header .cc-header-silver-image img {
-        width: 100%;
-        height: auto; }
-    #cc-info .cc-header .cc-header-title {
-      font-weight: 700; }
-    #cc-info .cc-header .cc-header-text a {
-      text-decoration: none; }
+  #cc-info .flex-item {
+    padding: 5px;
+    flex: 1 100%; }
+    @media all and (min-width: 568px) {
+      #cc-info .flex-item {
+        flex: 50%; } }
+  #cc-info .cc-header-item {
+    height: 100px; }
+  #cc-info .cc-body {
+    height: 300px; }
+  #cc-info .cc-header-title {
+    font-weight: 700; }
+  #cc-info .cc-header-text a {
+    text-decoration: none; }
   #cc-info .cc-google-map {
     display: block; }
     #cc-info .cc-google-map .cc-map {
@@ -37,7 +42,6 @@
       height: 200px; }
   #cc-info .location-wrapper {
     overflow-y: scroll;
-    height: 300px;
     width: 250px; }
     #cc-info .location-wrapper .cc-map-title {
       font-size: 1.5em;
