@@ -2,6 +2,7 @@
 $sans-light: "Open Sans";
 $white: #FFF;
 $blackish: #090a0a;
+$whitish: #fbfbfc;
 $table-grey: #ddd;
 $callout-grey: #ccc;
 $link-grey: #9d9d9d;
@@ -11,6 +12,7 @@ $contrast-dark: #25346d;
 
 
 #cc-info {
+  max-width: 1124px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -22,14 +24,14 @@ $contrast-dark: #25346d;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: $blackish;
+  background-color: $whitish;
   border: $blackish solid 1px;
   font-family: $sans-light;
   color: $blackish;
   a {
-    color: $white;
+    color: $blackish;
     &:visited {
-      color: $white;
+      color: $blackish;
     }
     &:hover, &:focus, &:active {
       color: $callout-grey;
@@ -46,7 +48,6 @@ $contrast-dark: #25346d;
 
   .cc-header-item {
     height: 100px;
-    color: $white;
   }
 
   .cc-body {
@@ -77,8 +78,6 @@ $contrast-dark: #25346d;
   }
   .location-wrapper {
     overflow-y: scroll;
-    background-color: $white;
-    // width: 250px;
     .cc-map-title {
       font-size: 1.5em;
       text-align: center;
@@ -128,7 +127,7 @@ $contrast-dark: #25346d;
     .cc-footer {
       background-color: $blackish;
       text-align: center;
-      color: $white;
+      color: $whitish;
       .cc-footer-text {
         font-size: .75em;
         padding: 1em 0;

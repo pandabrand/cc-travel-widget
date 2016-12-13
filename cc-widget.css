@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700,800");
 #cc-info {
+  max-width: 1124px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -11,14 +12,14 @@
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: #090a0a;
+  background-color: #fbfbfc;
   border: #090a0a solid 1px;
   font-family: "Open Sans";
   color: #090a0a; }
   #cc-info a {
-    color: #FFF; }
+    color: #090a0a; }
     #cc-info a:visited {
-      color: #FFF; }
+      color: #090a0a; }
     #cc-info a:hover, #cc-info a:focus, #cc-info a:active {
       color: #ccc; }
   #cc-info .flex-item {
@@ -28,8 +29,7 @@
       #cc-info .flex-item {
         width: 48%; } }
   #cc-info .cc-header-item {
-    height: 100px;
-    color: #FFF; }
+    height: 100px; }
   #cc-info .cc-body {
     height: 300px; }
   #cc-info .cc-header-title {
@@ -45,8 +45,7 @@
     #cc-info .cc-google-map .cc-map {
       height: 300px; }
   #cc-info .location-wrapper {
-    overflow-y: scroll;
-    background-color: #FFF; }
+    overflow-y: scroll; }
     #cc-info .location-wrapper .cc-map-title {
       font-size: 1.5em;
       text-align: center;
@@ -83,7 +82,7 @@
     #cc-info .location-wrapper .cc-footer {
       background-color: #090a0a;
       text-align: center;
-      color: #FFF; }
+      color: #fbfbfc; }
       #cc-info .location-wrapper .cc-footer .cc-footer-text {
         font-size: .75em;
         padding: 1em 0; }
