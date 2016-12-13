@@ -23,10 +23,10 @@
       color: #ccc; }
   #cc-info .flex-item {
     padding: 5px;
-    flex: 1 100%; }
+    width: 100%; }
     @media all and (min-width: 568px) {
       #cc-info .flex-item {
-        flex: 50%; } }
+        width: 50%; } }
   #cc-info .cc-header-item {
     height: 100px; }
   #cc-info .cc-body {

@@ -38,9 +38,9 @@ $contrast-dark: #25346d;
 
   .flex-item {
     padding: 5px;
-    flex: 1 100%;
+    width: 100%;
     @media all and (min-width: 568px) {
-      flex: 50%;
+      width: 50%;
     }
   }
 
