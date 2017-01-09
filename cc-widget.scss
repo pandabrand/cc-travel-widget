@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700,800');
 $sans-light: "Open Sans";
 $white: #FFF;
+$background: #ebeced;
 $blackish: #090a0a;
 $whitish: #fbfbfc;
 $table-grey: #ddd;
@@ -24,8 +25,7 @@ $cc-body-border: #ffe4c4;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: $whitish;
-  border: $blackish solid 1px;
+  background-color: $background;
   font-family: $sans-light;
   color: $blackish;
   a {
@@ -52,7 +52,7 @@ $cc-body-border: #ffe4c4;
 
   .cc-body {
     height: 300px;
-    border: solid 1px $cc-body-border;
+    background: $white;
     margin-bottom: 10px;
   }
 
@@ -89,7 +89,7 @@ $cc-body-border: #ffe4c4;
     .cc-location-table-row {
       display: block;
       margin: .25em;
-      border-top: $blackish solid 1px;
+      border-top: $callout-grey solid 1px;
       .cc-location-table-row-title {
         padding: .25em;
         font-weight: 700;
