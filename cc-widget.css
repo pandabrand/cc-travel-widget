@@ -13,7 +13,7 @@
   flex-flow: row wrap;
   justify-content: space-around;
   background-color: #ebeced;
-  font-family: "Open Sans";
+  font-family: "Roboto";
   color: #090a0a; }
   #cc-info a {
     color: #090a0a; }
@@ -68,7 +68,7 @@
         font-size: .75em;
         padding: .25em; }
       #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-links .map-links {
-        font-family: "Open Sans";
+        font-family: "Roboto";
         font-weight: 700;
         display: inline-block;
         margin-right: 3px;
