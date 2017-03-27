@@ -15,7 +15,6 @@
           let city = response.cities[0];
 
           city_coord = city.location;
-          $.cloudinary.config({ cloud_name: 'hjoyay5gd', api_key: '423165144988876'});
 
           //make title
           // let header_div = document.createElement('div');
@@ -87,7 +86,6 @@
               let location_image_div = document.createElement('div');
               location_image_div.className = 'cc-location-image-div flex-item-image';
               location_image = $.cloudinary.image(location.photo, {cloud_name: 'hjoyay5gd', width:150, dpr:'2.0'});
-              console.dir(location_image);
               $(location_image_div).append(location_image);
               location_row.appendChild(location_image_div);
 
