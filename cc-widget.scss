@@ -41,6 +41,10 @@ $cc-body-border: #ffe4c4;
   .flex-item-image {
     padding: 5px;
     width: 15%;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .flex-item {
