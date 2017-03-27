@@ -53,6 +53,7 @@
       display: block;
       font-weight: 700; }
     #cc-info .location-wrapper .cc-location-table-row {
+      display: flex;
       margin: .25em;
       border-top: #ccc solid 1px; }
       #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-title {
