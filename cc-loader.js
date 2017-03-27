@@ -9,7 +9,7 @@
       var _js = document.createElement('script');
       _js.type = 'text/javascript';
       _js.async = true;
-      _js.src = '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js';
+      _js.src = 'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js';
       var _jsx = document.getElementsByTagName('script')[0];
       _jsx.parentNode.insertBefore(_js, _jsx);
 
