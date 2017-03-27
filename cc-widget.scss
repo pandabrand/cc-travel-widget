@@ -14,8 +14,8 @@ $cc-body-border: #ffe4c4;
 
 #cc-info {
   max-width: 1124px;
-  padding: 0;
-  margin: 25px auto;;
+  padding: 10px;
+  margin: 25px auto;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
@@ -38,12 +38,14 @@ $cc-body-border: #ffe4c4;
     }
   }
 
-  .flex-item {
+  .flex-item-image {
     padding: 5px;
-    width: 100%;
-    @media all and (min-width: 568px) {
-      width: 100%;
-    }
+    width: 15%;
+  }
+
+  .flex-item-text {
+    padding: 5px;
+    width: 75%;
   }
 
   .cc-header-item {

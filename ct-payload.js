@@ -85,14 +85,14 @@
               location_row.id = location._id;
 
               let location_image_div = document.createElement('div');
-              location_image_div.className = 'cc-location-image-div';
+              location_image_div.className = 'cc-location-image-div flex-item-image';
               location_image = $.cloudinary.image(location.photo, {cloud_name: 'hjoyay5gd', width:150, dpr:'2.0'});
               console.dir(location_image);
               $(location_image_div).append(location_image);
               location_row.appendChild(location_image_div);
 
               let location_text_div = document.createElement('div');
-              location_text_div.className = 'cc-location-text-div';
+              location_text_div.className = 'cc-location-text-div flex-item-text';
               location_row.appendChild(location_text_div);
 
               let location_title_div = document.createElement('div');

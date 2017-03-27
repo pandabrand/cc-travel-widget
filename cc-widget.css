@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,700,800");
 #cc-info {
   max-width: 1124px;
-  padding: 0;
+  padding: 10px;
   margin: 25px auto;
   list-style: none;
   display: -webkit-box;
@@ -21,12 +21,12 @@
       color: #090a0a; }
     #cc-info a:hover, #cc-info a:focus, #cc-info a:active {
       color: #ccc; }
-  #cc-info .flex-item {
+  #cc-info .flex-item-image {
     padding: 5px;
-    width: 100%; }
-    @media all and (min-width: 568px) {
-      #cc-info .flex-item {
-        width: 100%; } }
+    width: 15%; }
+  #cc-info .flex-item-text {
+    padding: 5px;
+    width: 75%; }
   #cc-info .cc-header-item {
     height: 100px; }
   #cc-info .cc-body {
