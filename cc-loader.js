@@ -37,7 +37,7 @@
       var s = document.createElement('script');
       s.type = 'text/javascript';
       s.async = true;
-      s.src = 'http://www.collidetravel.com/js/ct-payload.js';
+      s.src = 'https://rawgit.com/pandabrand/cc-travel-widget/master/ct-payload.js';
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
     }
