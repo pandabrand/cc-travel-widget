@@ -90,13 +90,13 @@
               location_row.appendChild(location_title_div);
 
               let artists_with_location = _.filter(artists, function(a) {
-                return _.contains(a.locationIds, location._id);
+                return _.includes(a.locationIds, location._id);
               });
 
               if(artists_with_location) {
                 for(let y = 0; y < artists_with_location.length; y++) {
                   let artist = artists_with_location[y];
-                  let comment = _.findWhere(comments, {locationId: locations._id, artistId: artist._id});
+                  let comment = _.find(comments, {locationId: locations._id, artistId: artist._id});
                   let location_artist_comment_link = document.createElement('a');
                   location_artist_comment_link.href = 'http://collidetravel.com/city/'+city.cityName+'/artist/'+artist.artistSlug;
                   location_artist_comment_link.target = '_blank';
