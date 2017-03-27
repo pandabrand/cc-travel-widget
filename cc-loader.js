@@ -23,7 +23,7 @@
       var _jsCloudinary = document.createElement('script');
       _jsCloudinary.type = 'text/javascript';
       _jsCloudinary.async = true;
-      _jsCloudinary.src = 'https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core.min.js';
+      _jsCloudinary.src = 'https://rawgit.com/pandabrand/cc-travel-widget/master/jquery.cloudinary.js';
       _jsx = document.getElementsByTagName('script')[0];
       _jsx.parentNode.insertBefore(_jsCloudinary, _jsx);
 
