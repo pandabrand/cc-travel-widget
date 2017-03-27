@@ -20,13 +20,20 @@
       _jsx = document.getElementsByTagName('script')[0];
       _jsx.parentNode.insertBefore(_js2, _jsx);
 
-      var _js3 = document.createElement('script');
-      _js3.type = 'text/javascript';
-      _js3.async = true;
-      _js3.src = 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js';
+      var _jsCloudinary = document.createElement('script');
+      _jsCloudinary.type = 'text/javascript';
+      _jsCloudinary.async = true;
+      _jsCloudinary.src = 'https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core.min.js';
       _jsx = document.getElementsByTagName('script')[0];
-      _jsx.parentNode.insertBefore(_js3, _jsx);
+      _jsx.parentNode.insertBefore(_jsCloudinary, _jsx);
 
+      // var _js3 = document.createElement('script');
+      // _js3.type = 'text/javascript';
+      // _js3.async = true;
+      // _js3.src = 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js';
+      // _jsx = document.getElementsByTagName('script')[0];
+      // _jsx.parentNode.insertBefore(_js3, _jsx);
+      //
       var s = document.createElement('script');
       s.type = 'text/javascript';
       s.async = true;

@@ -26,7 +26,7 @@
     width: 100%; }
     @media all and (min-width: 568px) {
       #cc-info .flex-item {
-        width: 48%; } }
+        width: 100%; } }
   #cc-info .cc-header-item {
     height: 100px; }
   #cc-info .cc-body {
@@ -95,3 +95,5 @@
               color: #ccc; }
             #cc-info .location-wrapper .cc-footer .cc-footer-text p a:hover, #cc-info .location-wrapper .cc-footer .cc-footer-text p a:active, #cc-info .location-wrapper .cc-footer .cc-footer-text p a:focus {
               color: #9d9d9d; }
+
+/*# sourceMappingURL=cc-widget.css.map */
