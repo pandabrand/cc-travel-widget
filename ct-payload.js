@@ -15,6 +15,7 @@
           let city = response.cities[0];
 
           city_coord = city.location;
+          // $.cloudinary.config({ cloud_name: 'hjoyay5gd', api_key: '423165144988876'});
 
           //make title
           // let header_div = document.createElement('div');
@@ -83,11 +84,22 @@
               location_row.className = 'cc-location-table-row';
               location_row.id = location._id;
 
+              let location_image_div = document.createElement('div');
+              location_image_div.className = 'cc-location-image-div';
+              location_image = $.cloudinary.image(location.photo, {width:150, dpr:'2.0'});
+              console.dir(location_image);
+              location_image_div.appendChild(location_image);
+              location_row.appendChild(location_image_div);
+
+              let location_text_div = document.createElement('div');
+              location_text_div.className = 'cc-location-text-div';
+              location_row.appendChild(location_text_div);
+
               let location_title_div = document.createElement('div');
               location_title_div.className = 'cc-location-table-row-title';
               let location_title = document.createTextNode(location.name);
               location_title_div.appendChild(location_title);
-              location_row.appendChild(location_title_div);
+              location_text_div.appendChild(location_title_div);
 
               let artists_with_location = _.filter(artists, function(a) {
                 return _.includes(a.locationIds, location._id);
@@ -111,20 +123,20 @@
                   location_artist_comment_div.className = 'cc-location-table-row-comment';
                   location_artist_comment_div.style = 'box-shadow: 1px 1px 2px 0px ' + artist.color + ';';
                   location_artist_comment_div.appendChild(location_artist_comment_link);
-                  location_row.appendChild(location_artist_comment_div);
+                  location_text_div.appendChild(location_artist_comment_div);
                 }
               }
 
               let location_desc_div = document.createElement('div');
               location_desc_div.className = 'cc-location-table-row-desc';
               location_desc_div.innerHTML = location.description;
-              location_row.appendChild(location_desc_div);
+              location_text_div.appendChild(location_desc_div);
 
               let location_addr_div = document.createElement('div');
               location_addr_div.className = 'cc-location-table-row-addr';
               let location_addr = document.createTextNode(location.address);
               location_addr_div.appendChild(location_addr);
-              location_row.appendChild(location_addr_div);
+              location_text_div.appendChild(location_addr_div);
 
               let location_links_div = document.createElement('div');
               location_links_div.className = 'cc-location-table-row-links';
@@ -154,7 +166,7 @@
               web_div_anchor.appendChild(web_div_icon);
               web_div.appendChild(web_div_anchor);
               location_links_div.appendChild(web_div);
-              location_row.appendChild(location_links_div);
+              location_text_div.appendChild(location_links_div);
 
               location_scroller_div.appendChild(location_row);
 
