@@ -24,6 +24,9 @@
   #cc-info .flex-item-image {
     padding: 5px;
     width: 15%; }
+  #cc-info .flex-item {
+    padding: 5px;
+    width: 100%; }
   #cc-info .flex-item-text {
     padding: 5px;
     width: 75%; }
