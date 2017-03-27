@@ -15,7 +15,7 @@
           let city = response.cities[0];
 
           city_coord = city.location;
-          // $.cloudinary.config({ cloud_name: 'hjoyay5gd', api_key: '423165144988876'});
+          $.cloudinary.config({ cloud_name: 'hjoyay5gd', api_key: '423165144988876'});
 
           //make title
           // let header_div = document.createElement('div');
