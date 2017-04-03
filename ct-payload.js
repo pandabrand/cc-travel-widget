@@ -58,7 +58,7 @@
           //city image div
           let city_image_div = document.createElement('div');
           city_image_div.className = 'flex-item cc-body cc-image';
-          city_image_url = $.cloudinary.url(city.guidePreview, {cloud_name: 'hjoyay5gd', width:'auto', dpr:'auto', responsive_placeholder: "blank"});
+          city_image_url = $.cloudinary.url(city.guidePreview, {cloud_name: 'hjoyay5gd', width:'auto'});
           city_image = document.createElement('img');
           city_image.setAttribute('data-src', city_image_url);
           city_image.className = 'cld-responsive';

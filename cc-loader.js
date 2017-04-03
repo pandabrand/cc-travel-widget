@@ -44,7 +44,7 @@
       var _jsResponsive = document.createElement('script');
       s.type = 'text/javascript';
       s.async = true;
-      _jsResponsive.createTextNode('$.cloudinary.responsive()');
+      _jsResponsive.textContent = '$.cloudinary.responsive()';
       var z = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(_jsResponsive, z);
     }
