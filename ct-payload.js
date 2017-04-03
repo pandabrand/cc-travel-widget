@@ -28,32 +28,33 @@
 
           let header_title_div = document.createElement('div');
           header_title_div.className = 'cc-flex-item cc-header-item cc-header-title';
-          let header_img_link = document.createElement('a');
-          header_img_link.href = 'http://collidetravel.com/';
-          header_img_link.target = '_blank';
-
-          let header_img = document.createElement('img');
-          header_img.src = 'http://collidetravel.com/images/new-logo-inverse.png';
-          header_img_link.appendChild(header_img);
-          header_title_div.appendChild(header_img_link);
+          // let header_img_link = document.createElement('a');
+          // header_img_link.href = 'http://collidetravel.com/';
+          // header_img_link.target = '_blank';
+          //
+          // let header_img = document.createElement('img');
+          // header_img.src = 'http://collidetravel.com/images/new-logo-inverse.png';
+          // header_img_link.appendChild(header_img);
+          // header_title_div.appendChild(header_img_link);
           // header_title_div.appendChild(document.createTextNode('Collide Travel Guide:'));
 
           let header_text_div = document.createElement('div');
-          header_text_div.className = 'cc-header-item cc-header-text';
-          header_link = document.createElement('a');
-          header_link.href = 'http://collidetravel.com/city/'+city.cityName;
-          header_link.target = '_blank';
-          header_link.appendChild(document.createTextNode(city.displayName));
+          header_text_div.className = 'cc-flex-item cc-header-item cc-header-text';
+          header_sub_title = document.createElement('div');
+          // header_link.href = 'http://collidetravel.com/city/'+city.cityName;
+          // header_link.target = '_blank';
+          header_link.appendChild(document.createTextNode('Let us help we have the inside scoop.'));
           let header_title_element = document.createElement('h3');
-          header_title_element.appendChild(document.createTextNode('Collide Travel Guide:'));
+          header_title_element.appendChild(document.createTextNode('Need things to do in ' + city.displayName + '?'));
+          header_title_element.className = 'cc-uppercase';
           header_text_div.appendChild(header_title_element);
           header_text_div.appendChild(header_link);
           // header_div.appendChild(header_img_div);
           // header_div.appendChild(header_title_div);
           // header_div.appendChild(header_text_div);
           // cc_info.appendChild(header_div);
-          cc_info.appendChild(header_title_div);
           cc_info.appendChild(header_text_div);
+          cc_info.appendChild(header_title_div);
 
           //city image div
           let city_image_div = document.createElement('div');
