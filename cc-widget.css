@@ -36,10 +36,21 @@
         padding: 0; } }
   #cc-info .flex-item-text {
     padding: 5px; }
+  #cc-info .cc-flex-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around; }
   #cc-info .cc-header-item {
     height: 100px; }
   #cc-info .cc-small-text {
     font-size: .75em; }
+  #cc-info .cc-link {
+    text-decoration: none; }
   #cc-info .cc-body {
     height: 300px;
     background: #FFF;

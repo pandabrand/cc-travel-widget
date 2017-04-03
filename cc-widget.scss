@@ -61,12 +61,27 @@ $cc-body-border: #ffe4c4;
     // width: 75%;
   }
 
+  .cc-flex-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  
   .cc-header-item {
     height: 100px;
   }
 
   .cc-small-text {
     font-size: .75em;
+  }
+
+  .cc-link {
+    text-decoration: none;
   }
 
   .cc-body {

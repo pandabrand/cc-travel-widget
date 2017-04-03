@@ -121,7 +121,7 @@
                   let location_artist_comment_link = document.createElement('a');
                   location_artist_comment_link.href = 'http://collidetravel.com/city/'+city.cityName+'/artist/'+artist.artistSlug;
                   location_artist_comment_link.target = '_blank';
-                  location_artist_comment_link.className = 'cc-location-artist-link';
+                  location_artist_comment_link.className = 'cc-link';
                   if(comment) {
                     let comment_str = artist.artistName + ' says:<br/>' + comment;
                     location_artist_comment_link.innerHTML = comment_str;
@@ -141,14 +141,18 @@
               location_desc_div.innerHTML = location.description;
               location_text_div.appendChild(location_desc_div);
 
+              let location_flex_wrap = document.createElement('div');
+              location_flex_wrap.className = 'cc-flex-wrap';
+              location_text_div.appendChild(location_flex_wrap);
+
               let location_addr_div = document.createElement('div');
               location_addr_div.className = 'cc-location-table-row-addr cc-small-text flex-item';
               let location_addr = document.createTextNode(location.address);
               location_addr_div.appendChild(location_addr);
-              location_text_div.appendChild(location_addr_div);
+              location_flex_wrap.appendChild(location_addr_div);
 
               let location_links_div = document.createElement('div');
-              location_links_div.className = 'cc-location-table-row-links flex-item';
+              location_links_div.className = 'cc-location-table-row-links flex-item cc-small-text';
               let direction_div = document.createElement('div');
               direction_div.className = 'map-links';
               let direction_div_anchor = document.createElement('a');
@@ -175,7 +179,7 @@
               web_div_anchor.appendChild(web_div_icon);
               web_div.appendChild(web_div_anchor);
               location_links_div.appendChild(web_div);
-              location_text_div.appendChild(location_links_div);
+              location_flex_wrap.appendChild(location_links_div);
 
               location_scroller_div.appendChild(location_row);
 
