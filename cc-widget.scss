@@ -50,6 +50,9 @@ $cc-body-border: #ffe4c4;
   .flex-item {
     padding: 5px;
     width: 100%;
+    @media all and (min-width: 568px) {
+        width: 48%;
+    }
   }
 
   .flex-item-text {
