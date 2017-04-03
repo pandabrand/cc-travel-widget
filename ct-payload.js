@@ -146,7 +146,7 @@
 
               let location_flex_wrap = document.createElement('div');
               location_flex_wrap.className = 'cc-flex-wrap';
-              location_text_div.appendChild(location_flex_wrap);
+              location_row.appendChild(location_flex_wrap);
 
               let location_addr_div = document.createElement('div');
               location_addr_div.className = 'cc-location-table-row-addr cc-small-text cc-flex-item';
