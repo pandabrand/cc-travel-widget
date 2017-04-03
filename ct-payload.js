@@ -58,7 +58,7 @@
           //city image div
           let city_image_div = document.createElement('div');
           city_image_div.className = 'flex-item cc-body cc-image';
-          city_image = $.cloudinary.image(city.guidePreview, {cloud_name: 'hjoyay5gd', height:300, dpr:'2.0'});
+          city_image = $.cloudinary.image(city.guidePreview, {cloud_name: 'hjoyay5gd', width:'auto', dpr:'auto', responsive_placeholder: "blank"});
           $(city_image_div).append(city_image);
           cc_info.appendChild(city_image_div);
 
@@ -92,7 +92,7 @@
 
               let location_image_div = document.createElement('div');
               location_image_div.className = 'cc-location-image-div flex-item-image';
-              location_image = $.cloudinary.image(location.photo, {cloud_name: 'hjoyay5gd', width:150, dpr:'2.0'});
+              location_image = $.cloudinary.image(location.photo, {cloud_name: 'hjoyay5gd', width:'auto', dpr:'auto', responsive_placeholder: "blank"});
               $(location_image_div).append(location_image);
               location_row.appendChild(location_image_div);
 
