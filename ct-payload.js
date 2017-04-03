@@ -48,7 +48,7 @@
           header_title_element.appendChild(document.createTextNode('Need things to do in ' + city.displayName + '?'));
           header_title_element.className = 'cc-uppercase';
           header_text_div.appendChild(header_title_element);
-          header_text_div.appendChild(header_link);
+          header_text_div.appendChild(header_sub_title);
           // header_div.appendChild(header_img_div);
           // header_div.appendChild(header_title_div);
           // header_div.appendChild(header_text_div);
