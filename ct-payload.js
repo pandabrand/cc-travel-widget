@@ -149,13 +149,13 @@
               location_row.appendChild(location_flex_wrap);
 
               let location_addr_div = document.createElement('div');
-              location_addr_div.className = 'cc-location-table-row-addr cc-small-text cc-flex-item';
+              location_addr_div.className = 'cc-location-table-row-addr cc-small-text cc-flex-item-76';
               let location_addr = document.createTextNode(location.address);
               location_addr_div.appendChild(location_addr);
               location_flex_wrap.appendChild(location_addr_div);
 
               let location_links_div = document.createElement('div');
-              location_links_div.className = 'cc-location-table-row-links cc-flex-item cc-small-text';
+              location_links_div.className = 'cc-location-table-row-links cc-flex-item-22 cc-small-text';
               let direction_div = document.createElement('div');
               direction_div.className = 'map-links';
               let direction_div_anchor = document.createElement('a');
