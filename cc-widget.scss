@@ -51,7 +51,7 @@ $cc-body-border: #ffe4c4;
     padding: 5px;
     width: 100%;
     @media all and (min-width: 568px) {
-        width: 48%;
+        width: 49%;
         padding: 0;
     }
   }
@@ -124,8 +124,9 @@ $cc-body-border: #ffe4c4;
 
   .cc-uppercase {
     text-transform: uppercase;
+    margin: 0;
   }
-  
+
   .cc-link {
     text-decoration: none;
   }

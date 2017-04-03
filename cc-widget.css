@@ -32,7 +32,7 @@
     width: 100%; }
     @media all and (min-width: 568px) {
       #cc-info .cc-flex-item {
-        width: 48%;
+        width: 49%;
         padding: 0; } }
   #cc-info .cc-flex-item-75 {
     padding: 5px;
@@ -82,7 +82,8 @@
   #cc-info .cc-small-text {
     font-size: .75em; }
   #cc-info .cc-uppercase {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0; }
   #cc-info .cc-link {
     text-decoration: none; }
   #cc-info .cc-body {
