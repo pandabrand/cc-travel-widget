@@ -40,6 +40,13 @@
       s.src = 'https://rawgit.com/pandabrand/cc-travel-widget/master/ct-payload.js';
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
+
+      var _jsResponsive = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      _jsResponsive.createTextNode('$.cloudinary.responsive()');
+      var z = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(_jsResponsive, z);
     }
 
     if (window.attachEvent)
