@@ -43,7 +43,7 @@
           header_sub_title = document.createElement('div');
           // header_link.href = 'http://collidetravel.com/city/'+city.cityName;
           // header_link.target = '_blank';
-          header_sub_title.appendChild(document.createTextNode('Let us help we have the inside scoop.'));
+          header_sub_title.appendChild(document.createTextNode('Let us help! We have the inside scoop.'));
           let header_title_element = document.createElement('h2');
           header_title_element.appendChild(document.createTextNode('Need things to do in ' + city.displayName + '?'));
           header_title_element.className = 'cc-uppercase';
