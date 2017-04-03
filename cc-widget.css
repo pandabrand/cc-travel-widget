@@ -32,7 +32,8 @@
     width: 100%; }
     @media all and (min-width: 568px) {
       #cc-info .flex-item {
-        width: 48%; } }
+        width: 48%;
+        padding: 0; } }
   #cc-info .flex-item-text {
     padding: 5px;
     width: 75%; }
@@ -42,6 +43,11 @@
     height: 300px;
     background: #FFF;
     margin-bottom: 10px; }
+    #cc-info .cc-body .cc-image {
+      overflow: hidden; }
+      #cc-info .cc-body .cc-image img {
+        width: 100%;
+        height: auto; }
   #cc-info .cc-header-title {
     font-weight: 700; }
     #cc-info .cc-header-title img {
