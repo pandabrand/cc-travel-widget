@@ -90,11 +90,11 @@
               location_row.className = 'cc-location-table-row';
               location_row.id = location._id;
 
-              let location_image_div = document.createElement('div');
-              location_image_div.className = 'cc-location-image-div flex-item-image';
-              location_image = $.cloudinary.image(location.photo, {cloud_name: 'hjoyay5gd', width:'auto', dpr:'auto', responsive_placeholder: 'blank'});
-              $(location_image_div).append(location_image);
-              location_row.appendChild(location_image_div);
+              // let location_image_div = document.createElement('div');
+              // location_image_div.className = 'cc-location-image-div flex-item-image';
+              // location_image = $.cloudinary.image(location.photo, {cloud_name: 'hjoyay5gd', width:'auto', dpr:'auto', responsive_placeholder: 'blank'});
+              // $(location_image_div).append(location_image);
+              // location_row.appendChild(location_image_div);
 
               let location_text_div = document.createElement('div');
               location_text_div.className = 'cc-location-text-div flex-item-text';
@@ -111,40 +111,44 @@
               });
 
               if(artists_with_location) {
+                let recommend_div = document.createElement('div');
+                recommend_div.className = 'callout-div';
+                recommend_div.appendChild(document.createTextNode('Recommended by'));
+                location_text_div.appendChild(recommend_div);
                 for(let y = 0; y < artists_with_location.length; y++) {
                   let artist = artists_with_location[y];
                   let comment = _.find(comments, {locationId: locations._id, artistId: artist._id});
                   let location_artist_comment_link = document.createElement('a');
                   location_artist_comment_link.href = 'http://collidetravel.com/city/'+city.cityName+'/artist/'+artist.artistSlug;
                   location_artist_comment_link.target = '_blank';
+                  location_artist_comment_link.className = 'cc-location-artist-link';
                   if(comment) {
                     let comment_str = artist.artistName + ' says:<br/>' + comment;
                     location_artist_comment_link.innerHTML = comment_str;
                   } else {
-                    location_artist_comment_link.appendChild(document.createTextNode(artist.artistName + ' Recommends'));
+                    location_artist_comment_link.appendChild(document.createTextNode(artist.artistName));
                   }
 
                   let location_artist_comment_div = document.createElement('div');
                   location_artist_comment_div.className = 'cc-location-table-row-comment';
-                  location_artist_comment_div.style = 'box-shadow: 1px 1px 2px 0px ' + artist.color + ';';
                   location_artist_comment_div.appendChild(location_artist_comment_link);
                   location_text_div.appendChild(location_artist_comment_div);
                 }
               }
 
               let location_desc_div = document.createElement('div');
-              location_desc_div.className = 'cc-location-table-row-desc';
+              location_desc_div.className = 'cc-location-table-row-desc cc-small-text';
               location_desc_div.innerHTML = location.description;
               location_text_div.appendChild(location_desc_div);
 
               let location_addr_div = document.createElement('div');
-              location_addr_div.className = 'cc-location-table-row-addr';
+              location_addr_div.className = 'cc-location-table-row-addr cc-small-text flex-item';
               let location_addr = document.createTextNode(location.address);
               location_addr_div.appendChild(location_addr);
               location_text_div.appendChild(location_addr_div);
 
               let location_links_div = document.createElement('div');
-              location_links_div.className = 'cc-location-table-row-links';
+              location_links_div.className = 'cc-location-table-row-links flex-item';
               let direction_div = document.createElement('div');
               direction_div.className = 'map-links';
               let direction_div_anchor = document.createElement('a');
@@ -159,7 +163,7 @@
               location_links_div.appendChild(direction_div);
 
               let web_div = document.createElement('div');
-              web_div.className = 'map-links';
+              web_div.className = 'map-links cc-small-text';
               let web_div_anchor = document.createElement('a');
               web_div_anchor.href = location.website;
               web_div_anchor.target = '_blank';

@@ -58,11 +58,15 @@ $cc-body-border: #ffe4c4;
 
   .flex-item-text {
     padding: 5px;
-    width: 75%;
+    // width: 75%;
   }
 
   .cc-header-item {
     height: 100px;
+  }
+
+  .cc-small-text {
+    font-size: .75em;
   }
 
   .cc-body {
@@ -70,7 +74,7 @@ $cc-body-border: #ffe4c4;
     background: $white;
     margin-bottom: 10px;
   }
-  
+
   .cc-image {
     overflow: hidden;
     img {
@@ -107,7 +111,7 @@ $cc-body-border: #ffe4c4;
       font-size: 1.5em;
       text-align: center;
       display: block;
-      font-weight: 700;
+      padding: 1.5rem 0;
     }
     .cc-location-table-row {
       display: flex;
@@ -123,9 +127,9 @@ $cc-body-border: #ffe4c4;
       }
       .cc-location-table-row-desc {
         padding: .25em;
+
       }
       .cc-location-table-row-addr {
-        font-size: .75em;
         padding: .25em;
       }
       .cc-location-table-row-links {
@@ -137,7 +141,6 @@ $cc-body-border: #ffe4c4;
           padding: 3px;
           text-align: center;
           color: $contrast-dark;
-          font-size: .75em;
           &:last-child {
             margin-right: 0;
           }
