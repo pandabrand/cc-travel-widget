@@ -27,7 +27,7 @@
           // header_img_div.appendChild(header_img);
 
           let header_title_div = document.createElement('div');
-          header_title_div.className = 'flex-item cc-header-item cc-header-title';
+          header_title_div.className = 'cc-flex-item cc-header-item cc-header-title';
           let header_img_link = document.createElement('a');
           header_img_link.href = 'http://collidetravel.com/';
           header_img_link.target = '_blank';
@@ -57,14 +57,14 @@
 
           //city image div
           let city_image_div = document.createElement('div');
-          city_image_div.className = 'flex-item cc-body cc-image';
+          city_image_div.className = 'cc-flex-item cc-body cc-image';
           city_image = $.cloudinary.image(city.guidePreview, {cloud_name: 'hjoyay5gd', width:'auto', dpr:'auto', responsive_placeholder: 'blank'});
           $(city_image_div).append(city_image);
           cc_info.appendChild(city_image_div);
 
           //create location scoller
           let location_scroller_div = document.createElement('div');
-          location_scroller_div.className = 'flex-item cc-body location-wrapper';
+          location_scroller_div.className = 'cc-flex-item cc-body location-wrapper';
           location_scroller_div.id = 'cc-location-wrapper-id';
           cc_info.appendChild(location_scroller_div);
 
@@ -91,13 +91,13 @@
               location_row.id = location._id;
 
               // let location_image_div = document.createElement('div');
-              // location_image_div.className = 'cc-location-image-div flex-item-image';
+              // location_image_div.className = 'cc-location-image-div cc-flex-item-image';
               // location_image = $.cloudinary.image(location.photo, {cloud_name: 'hjoyay5gd', width:'auto', dpr:'auto', responsive_placeholder: 'blank'});
               // $(location_image_div).append(location_image);
               // location_row.appendChild(location_image_div);
 
               let location_text_div = document.createElement('div');
-              location_text_div.className = 'cc-location-text-div flex-item-text';
+              location_text_div.className = 'cc-location-text-div cc-flex-item-text';
               location_row.appendChild(location_text_div);
 
               let location_title_div = document.createElement('div');
@@ -111,11 +111,14 @@
               });
 
               if(artists_with_location) {
-                let recommend_div = document.createElement('div');
-                recommend_div.className = 'callout-div';
-                recommend_div.appendChild(document.createTextNode('Recommended by'));
-                location_text_div.appendChild(recommend_div);
-                for(let y = 0; y < artists_with_location.length; y++) {
+                let artists_with_location_count = artists_with_location.length;
+                if(artists_with_location_count > 0) {
+                  let recommend_div = document.createElement('div');
+                  recommend_div.className = 'cc-callout-div cc-small-text';
+                  recommend_div.appendChild(document.createTextNode('Recommended by'));
+                  location_text_div.appendChild(recommend_div);
+                }
+                for(let y = 0; y < artists_with_location_count; y++) {
                   let artist = artists_with_location[y];
                   let comment = _.find(comments, {locationId: locations._id, artistId: artist._id});
                   let location_artist_comment_link = document.createElement('a');
@@ -146,37 +149,38 @@
               location_text_div.appendChild(location_flex_wrap);
 
               let location_addr_div = document.createElement('div');
-              location_addr_div.className = 'cc-location-table-row-addr cc-small-text flex-item';
+              location_addr_div.className = 'cc-location-table-row-addr cc-small-text cc-flex-item';
               let location_addr = document.createTextNode(location.address);
               location_addr_div.appendChild(location_addr);
               location_flex_wrap.appendChild(location_addr_div);
 
               let location_links_div = document.createElement('div');
-              location_links_div.className = 'cc-location-table-row-links flex-item cc-small-text';
+              location_links_div.className = 'cc-location-table-row-links cc-flex-item cc-small-text';
               let direction_div = document.createElement('div');
               direction_div.className = 'map-links';
               let direction_div_anchor = document.createElement('a');
               direction_div_anchor.href = 'https://www.google.com/maps/dir/Current+Location/'+location.location.lat+','+location.location.lng;
               direction_div_anchor.target = '_blank';
+              direction_div_anchor.className = 'cc-link';
               let direction_div_text = document.createTextNode('Directions');
-              let direction_div_icon = document.createElement('i');
-              direction_div_icon.className = 'fa fa-map-o';
+              // let direction_div_icon = document.createElement('i');
+              // direction_div_icon.className = 'fa fa-map-o';
               direction_div_anchor.appendChild(direction_div_text);
-              direction_div_anchor.appendChild(direction_div_icon);
+              // direction_div_anchor.appendChild(direction_div_icon);
               direction_div.appendChild(direction_div_anchor);
               location_links_div.appendChild(direction_div);
 
               let web_div = document.createElement('div');
-              web_div.className = 'map-links cc-small-text';
+              web_div.className = 'map-links';
               let web_div_anchor = document.createElement('a');
               web_div_anchor.href = location.website;
               web_div_anchor.target = '_blank';
-              web_div_anchor.className = 'location-website';
+              web_div_anchor.className = 'location-website cc-link';
               let web_div_text = document.createTextNode('Website');
-              let web_div_icon = document.createElement('i');
-              web_div_icon.className = 'fa fa-laptop';
+              // let web_div_icon = document.createElement('i');
+              // web_div_icon.className = 'fa fa-laptop';
               web_div_anchor.appendChild(web_div_text);
-              web_div_anchor.appendChild(web_div_icon);
+              // web_div_anchor.appendChild(web_div_icon);
               web_div.appendChild(web_div_anchor);
               location_links_div.appendChild(web_div);
               location_flex_wrap.appendChild(location_links_div);

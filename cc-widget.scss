@@ -38,7 +38,7 @@ $cc-body-border: #ffe4c4;
     }
   }
 
-  .flex-item-image {
+  .cc-flex-item-image {
     padding: 5px;
     width: 15%;
     img {
@@ -47,7 +47,7 @@ $cc-body-border: #ffe4c4;
     }
   }
 
-  .flex-item {
+  .cc-flex-item {
     padding: 5px;
     width: 100%;
     @media all and (min-width: 568px) {
@@ -56,12 +56,13 @@ $cc-body-border: #ffe4c4;
     }
   }
 
-  .flex-item-text {
+  .cc-flex-item-text {
     padding: 5px;
     // width: 75%;
   }
 
   .cc-flex-wrap {
+    max-width: 100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -71,7 +72,12 @@ $cc-body-border: #ffe4c4;
     flex-flow: row wrap;
     justify-content: space-around;
   }
-  
+
+  .cc-callout-div {
+    padding: 0 5px;
+    color: $table-grey;
+  }
+
   .cc-header-item {
     height: 100px;
   }
@@ -138,7 +144,6 @@ $cc-body-border: #ffe4c4;
       }
       .cc-location-table-row-comment {
         padding: .25em;
-        font-weight: 700;
       }
       .cc-location-table-row-desc {
         padding: .25em;
@@ -148,14 +153,17 @@ $cc-body-border: #ffe4c4;
         padding: .25em;
       }
       .cc-location-table-row-links {
+        text-align: right;
         .map-links {
           font-family: $sans-light;
-          font-weight: 700;
           display: inline-block;
           margin-right: 3px;
           padding: 3px;
           text-align: center;
           color: $contrast-dark;
+          &:first-child {
+            border-right: 1px solid $contrast-dark;
+          }
           &:last-child {
             margin-right: 0;
           }
