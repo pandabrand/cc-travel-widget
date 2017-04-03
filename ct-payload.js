@@ -22,9 +22,9 @@
 
           let header_img_div = document.createElement('div');
           header_img_div.className = 'cc-header-silver-image';
-          let header_img = document.createElement('img');
-          header_img.src = 'http://collidetravel.com/images/flat-logo-inline-white-250px.png';
-          header_img_div.appendChild(header_img);
+          // let header_img = document.createElement('img');
+          // header_img.src = 'http://collidetravel.com/images/flat-logo-inline-white-250px.png';
+          // header_img_div.appendChild(header_img);
 
           let header_title_div = document.createElement('div');
           header_title_div.className = 'flex-item cc-header-item cc-header-title';
@@ -61,7 +61,7 @@
           city_image = $.cloudinary.image(city.guidePreview, {cloud_name: 'hjoyay5gd', height:300, dpr:'2.0'});
           city_image_div.appendChild(city_image);
           cc_info.appendChild(city_image_div);
-          
+
           //create location scoller
           let location_scroller_div = document.createElement('div');
           location_scroller_div.className = 'flex-item cc-body location-wrapper';
