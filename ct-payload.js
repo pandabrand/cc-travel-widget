@@ -59,7 +59,7 @@
           let city_image_div = document.createElement('div');
           city_image_div.className = 'flex-item cc-body cc-image';
           city_image = $.cloudinary.image(city.guidePreview, {cloud_name: 'hjoyay5gd', height:300, dpr:'2.0'});
-          $(city_image_div).appendChild(city_image);
+          $(city_image_div).append(city_image);
           cc_info.appendChild(city_image_div);
 
           //create location scoller
