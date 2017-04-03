@@ -43,11 +43,11 @@
     height: 300px;
     background: #FFF;
     margin-bottom: 10px; }
-    #cc-info .cc-body .cc-image {
-      overflow: hidden; }
-      #cc-info .cc-body .cc-image img {
-        width: 100%;
-        height: auto; }
+  #cc-info .cc-image {
+    overflow: hidden; }
+    #cc-info .cc-image img {
+      width: 100%;
+      height: auto; }
   #cc-info .cc-header-title {
     font-weight: 700; }
     #cc-info .cc-header-title img {

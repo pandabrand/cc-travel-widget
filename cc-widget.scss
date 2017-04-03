@@ -69,12 +69,13 @@ $cc-body-border: #ffe4c4;
     height: 300px;
     background: $white;
     margin-bottom: 10px;
-    .cc-image {
-      overflow: hidden;
-      img {
-        width: 100%;
-        height: auto;
-      }
+  }
+  
+  .cc-image {
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 
