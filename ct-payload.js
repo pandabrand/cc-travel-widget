@@ -72,7 +72,7 @@
 
           //create map title div and text
           let map_title_div = document.createElement('div');
-          map_title_div.className = 'cc-header';
+          map_title_div.className = 'cc-header cc-scroll-header';
           let map_title_text = document.createTextNode(city.displayName);
           map_title_div.appendChild(map_title_text);
           location_scroller_div.appendChild(map_title_div);

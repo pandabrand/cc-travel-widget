@@ -77,7 +77,7 @@
     justify-content: space-around; }
   #cc-info .cc-callout-div {
     padding: 0 5px;
-    color: #ddd; }
+    color: #999; }
   #cc-info .cc-header-item {
     height: 100px; }
   #cc-info .cc-small-text {
@@ -112,6 +112,8 @@
     margin-top: 0; }
   #cc-info .cc-header-text a {
     text-decoration: none; }
+  #cc-info .cc-scroll-header {
+    padding: .25em; }
   #cc-info .cc-google-map {
     display: block; }
     #cc-info .cc-google-map .cc-map {

@@ -4,7 +4,7 @@ $white: #FFF;
 $background: #ebeced;
 $blackish: #090a0a;
 $whitish: #fbfbfc;
-$table-grey: #ddd;
+$table-grey: #999;
 $callout-grey: #ccc;
 $link-grey: #9d9d9d;
 $link-hover-white: $white;
@@ -173,6 +173,10 @@ $cc-body-border: #ffe4c4;
     a {
       text-decoration: none;
     }
+  }
+
+  .cc-scroll-header {
+    padding: .25em;
   }
 
   .cc-google-map {
