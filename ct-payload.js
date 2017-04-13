@@ -41,12 +41,13 @@
           let header_text_div = document.createElement('div');
           header_text_div.className = 'cc-flex-item cc-header-item cc-header-text';
           header_sub_title = document.createElement('div');
+          header_sub_title.className = 'cc-subheader';
           // header_link.href = 'http://collidetravel.com/city/'+city.cityName;
           // header_link.target = '_blank';
           header_sub_title.appendChild(document.createTextNode('Let us help! We have the inside scoop.'));
-          let header_title_element = document.createElement('h2');
+          let header_title_element = document.createElement('div');
           header_title_element.appendChild(document.createTextNode('Need things to do in ' + city.displayName + '?'));
-          header_title_element.className = 'cc-uppercase';
+          header_title_element.className = 'cc-header';
           header_text_div.appendChild(header_title_element);
           header_text_div.appendChild(header_sub_title);
           // header_div.appendChild(header_img_div);
@@ -71,7 +72,7 @@
 
           //create map title div and text
           let map_title_div = document.createElement('div');
-          map_title_div.className = 'cc-map-title';
+          map_title_div.className = 'cc-header';
           let map_title_text = document.createTextNode(city.displayName);
           map_title_div.appendChild(map_title_text);
           location_scroller_div.appendChild(map_title_div);
@@ -102,7 +103,7 @@
               location_row.appendChild(location_text_div);
 
               let location_title_div = document.createElement('div');
-              location_title_div.className = 'cc-location-table-row-title';
+              location_title_div.className = 'cc-location-table-row-title cc-small-header';
               let location_title = document.createTextNode(location.name);
               location_title_div.appendChild(location_title);
               location_text_div.appendChild(location_title_div);

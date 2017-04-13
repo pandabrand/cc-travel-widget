@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
 $sans-light: "Roboto";
 $white: #FFF;
 $background: #ebeced;
@@ -27,6 +27,7 @@ $cc-body-border: #ffe4c4;
   justify-content: space-around;
   background-color: $background;
   font-family: $sans-light;
+  font-size: 14px;
   color: $blackish;
   a {
     color: $blackish;
@@ -119,7 +120,7 @@ $cc-body-border: #ffe4c4;
   }
 
   .cc-small-text {
-    font-size: .75em;
+    font-size: 11px;
   }
 
   .cc-uppercase {
@@ -143,6 +144,20 @@ $cc-body-border: #ffe4c4;
       width: 100%;
       height: auto;
     }
+  }
+
+  .cc-header {
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  .cc-subheader {
+    font-size: 24px;
+  }
+
+  .cc-small-header {
+    font-size: 14px;
+    text-transform: uppercase;
   }
 
   .cc-header-title {
@@ -180,10 +195,10 @@ $cc-body-border: #ffe4c4;
       border-top: $callout-grey solid 1px;
       .cc-location-table-row-title {
         padding: .25em;
-        font-weight: 700;
       }
       .cc-location-table-row-comment {
-        padding: .25em;
+        padding: .25em .25em 0 .25em;
+        margin-left: 1rem;
       }
       .cc-location-table-row-desc {
         padding: .25em;
