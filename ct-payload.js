@@ -142,7 +142,7 @@
               }
 
               let location_desc_div = document.createElement('div');
-              location_desc_div.className = 'cc-location-table-row-desc cc-small-text';
+              location_desc_div.className = 'cc-location-table-row-desc';
               location_desc_div.innerHTML = location.description;
               location_text_div.appendChild(location_desc_div);
 
