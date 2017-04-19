@@ -2,7 +2,7 @@
 #cc-info {
   max-width: 50%;
   height: 250px;
-  padding: 10px;
+  padding: 0 10px;
   margin: 25px auto;
   overflow-y: auto;
   list-style: none;
@@ -150,7 +150,9 @@
   #cc-info .cc-footer {
     background-color: #090a0a;
     text-align: center;
-    color: #fbfbfc; }
+    color: #fbfbfc;
+    width: 100%;
+    margin-top: 1rem; }
     #cc-info .cc-footer .cc-footer-text {
       font-size: .75em;
       padding: 1em 0; }

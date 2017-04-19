@@ -15,7 +15,7 @@ $cc-body-border: #ffe4c4;
 #cc-info {
   max-width: 50%;
   height: 250px;
-  padding: 10px;
+  padding: 0 10px;
   margin: 25px auto;
   overflow-y: auto;
   list-style: none;
@@ -234,6 +234,8 @@ $cc-body-border: #ffe4c4;
     background-color: $blackish;
     text-align: center;
     color: $whitish;
+    width: 100%;
+    margin-top: 1rem;
     .cc-footer-text {
       font-size: .75em;
       padding: 1em 0;
