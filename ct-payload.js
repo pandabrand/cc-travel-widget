@@ -18,17 +18,17 @@
 
 
           //create location scoller
-          let location_scroller_div = document.createElement('div');
-          location_scroller_div.className = 'cc-flex-item cc-body location-wrapper';
-          location_scroller_div.id = 'cc-location-wrapper-id';
-          cc_info.appendChild(location_scroller_div);
+          // let location_scroller_div = document.createElement('div');
+          // location_scroller_div.className = 'cc-flex-item cc-body location-wrapper';
+          // location_scroller_div.id = 'cc-location-wrapper-id';
+          // cc_info.appendChild(location_scroller_div);
 
           //create map title div and text
           let map_title_div = document.createElement('div');
           map_title_div.className = 'cc-header cc-scroll-header';
           let map_title_text = document.createTextNode(city.displayName);
           map_title_div.appendChild(map_title_text);
-          location_scroller_div.appendChild(map_title_div);
+          cc_info.appendChild(map_title_div);
 
           //make location table
           let locations = response.locations;
@@ -140,7 +140,7 @@
               location_links_div.appendChild(web_div);
               location_flex_wrap.appendChild(location_links_div);
 
-              location_scroller_div.appendChild(location_row);
+              cc_info.appendChild(location_row);
 
             }
           }
@@ -154,7 +154,7 @@
           let footer_str = '<p>Find even more at <a href="http://collidetravel.com/" target="_blank">Collide Travel</a></p>';
           footer_text_div.innerHTML = footer_str;
           footer_div.appendChild(footer_text_div);
-          location_scroller_div.appendChild(footer_div);
+          cc_info.appendChild(footer_div);
 
         }
       });
