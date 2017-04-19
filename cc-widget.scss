@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
 $sans-light: "Roboto";
 $white: #FFF;
-$background: #ebeced;
+$background: $white;
 $blackish: #090a0a;
 $whitish: #fbfbfc;
 $table-grey: #999;
@@ -192,6 +192,7 @@ $cc-body-border: #ffe4c4;
   .cc-location-table-row {
     margin: .25em;
     border-top: $callout-grey solid 1px;
+    width: 100%;
     .cc-location-table-row-title {
       padding: .25em;
     }

@@ -4,7 +4,6 @@
   function attachAndCreate() {
     let cc_info = document.getElementById('cc-info');
     let cc_data_city = cc_info.dataset.ccCity;
-    console.log(cc_data_city);
     if(!cc_info || !cc_data_city) {
       return;
     } else {

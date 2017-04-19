@@ -14,7 +14,7 @@
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: #ebeced;
+  background-color: #FFF;
   font-family: "Roboto";
   font-size: 14px;
   color: #090a0a; }
@@ -122,7 +122,8 @@
       height: 300px; }
   #cc-info .cc-location-table-row {
     margin: .25em;
-    border-top: #ccc solid 1px; }
+    border-top: #ccc solid 1px;
+    width: 100%; }
     #cc-info .cc-location-table-row .cc-location-table-row-title {
       padding: .25em; }
     #cc-info .cc-location-table-row .cc-location-table-row-comment {
