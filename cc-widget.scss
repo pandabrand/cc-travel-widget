@@ -13,9 +13,11 @@ $contrast-dark: #25346d;
 $cc-body-border: #ffe4c4;
 
 #cc-info {
-  max-width: 1124px;
+  max-width: 50%;
+  height: 250px;
   padding: 10px;
   margin: 25px auto;
+  overflow-y: auto;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
@@ -186,6 +188,70 @@ $cc-body-border: #ffe4c4;
       height: 300px;
     }
   }
+
+  .cc-location-table-row {
+    margin: .25em;
+    border-top: $callout-grey solid 1px;
+    .cc-location-table-row-title {
+      padding: .25em;
+    }
+    .cc-location-table-row-comment {
+      padding: .25em .25em 0 .25em;
+      margin-left: 1rem;
+    }
+    .cc-location-table-row-desc {
+      padding: .25em;
+
+    }
+    .cc-location-table-row-addr {
+      padding: .25em;
+    }
+    .cc-location-table-row-links {
+      text-align: right;
+      .map-links {
+        font-family: $sans-light;
+        display: inline-block;
+        padding: 3px;
+        text-align: center;
+        color: $contrast-dark;
+        &:first-child {
+          border-right: 1px solid $contrast-dark;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          .fa {
+            padding-left: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .cc-footer {
+    background-color: $blackish;
+    text-align: center;
+    color: $whitish;
+    .cc-footer-text {
+      font-size: .75em;
+      padding: 1em 0;
+      p {
+        margin: 0 !important;
+        a {
+          color: $callout-grey;
+          &:visited {
+            color: $callout-grey;
+          }
+          &:hover, &:active, &:focus {
+            color: $link-grey;
+          }
+        }
+      }
+    }
+  }
+
+
   .location-wrapper {
     overflow-y: scroll;
     .cc-map-title {
@@ -193,66 +259,6 @@ $cc-body-border: #ffe4c4;
       text-align: center;
       display: block;
       padding: 1.5rem 0;
-    }
-    .cc-location-table-row {
-      margin: .25em;
-      border-top: $callout-grey solid 1px;
-      .cc-location-table-row-title {
-        padding: .25em;
-      }
-      .cc-location-table-row-comment {
-        padding: .25em .25em 0 .25em;
-        margin-left: 1rem;
-      }
-      .cc-location-table-row-desc {
-        padding: .25em;
-
-      }
-      .cc-location-table-row-addr {
-        padding: .25em;
-      }
-      .cc-location-table-row-links {
-        text-align: right;
-        .map-links {
-          font-family: $sans-light;
-          display: inline-block;
-          padding: 3px;
-          text-align: center;
-          color: $contrast-dark;
-          &:first-child {
-            border-right: 1px solid $contrast-dark;
-          }
-          &:last-child {
-            margin-right: 0;
-          }
-          a {
-            .fa {
-              padding-left: 3px;
-            }
-          }
-        }
-      }
-    }
-    .cc-footer {
-      background-color: $blackish;
-      text-align: center;
-      color: $whitish;
-      .cc-footer-text {
-        font-size: .75em;
-        padding: 1em 0;
-        p {
-          margin: 0 !important;
-          a {
-            color: $callout-grey;
-            &:visited {
-              color: $callout-grey;
-            }
-            &:hover, &:active, &:focus {
-              color: $link-grey;
-            }
-          }
-        }
-      }
     }
   }
 }

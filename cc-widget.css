@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,700");
 #cc-info {
-  max-width: 1124px;
+  max-width: 50%;
+  height: 250px;
   padding: 10px;
   margin: 25px auto;
+  overflow-y: auto;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
@@ -118,6 +120,47 @@
     display: block; }
     #cc-info .cc-google-map .cc-map {
       height: 300px; }
+  #cc-info .cc-location-table-row {
+    margin: .25em;
+    border-top: #ccc solid 1px; }
+    #cc-info .cc-location-table-row .cc-location-table-row-title {
+      padding: .25em; }
+    #cc-info .cc-location-table-row .cc-location-table-row-comment {
+      padding: .25em .25em 0 .25em;
+      margin-left: 1rem; }
+    #cc-info .cc-location-table-row .cc-location-table-row-desc {
+      padding: .25em; }
+    #cc-info .cc-location-table-row .cc-location-table-row-addr {
+      padding: .25em; }
+    #cc-info .cc-location-table-row .cc-location-table-row-links {
+      text-align: right; }
+      #cc-info .cc-location-table-row .cc-location-table-row-links .map-links {
+        font-family: "Roboto";
+        display: inline-block;
+        padding: 3px;
+        text-align: center;
+        color: #25346d; }
+        #cc-info .cc-location-table-row .cc-location-table-row-links .map-links:first-child {
+          border-right: 1px solid #25346d; }
+        #cc-info .cc-location-table-row .cc-location-table-row-links .map-links:last-child {
+          margin-right: 0; }
+        #cc-info .cc-location-table-row .cc-location-table-row-links .map-links a .fa {
+          padding-left: 3px; }
+  #cc-info .cc-footer {
+    background-color: #090a0a;
+    text-align: center;
+    color: #fbfbfc; }
+    #cc-info .cc-footer .cc-footer-text {
+      font-size: .75em;
+      padding: 1em 0; }
+      #cc-info .cc-footer .cc-footer-text p {
+        margin: 0 !important; }
+        #cc-info .cc-footer .cc-footer-text p a {
+          color: #ccc; }
+          #cc-info .cc-footer .cc-footer-text p a:visited {
+            color: #ccc; }
+          #cc-info .cc-footer .cc-footer-text p a:hover, #cc-info .cc-footer .cc-footer-text p a:active, #cc-info .cc-footer .cc-footer-text p a:focus {
+            color: #9d9d9d; }
   #cc-info .location-wrapper {
     overflow-y: scroll; }
     #cc-info .location-wrapper .cc-map-title {
@@ -125,44 +168,3 @@
       text-align: center;
       display: block;
       padding: 1.5rem 0; }
-    #cc-info .location-wrapper .cc-location-table-row {
-      margin: .25em;
-      border-top: #ccc solid 1px; }
-      #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-title {
-        padding: .25em; }
-      #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-comment {
-        padding: .25em .25em 0 .25em;
-        margin-left: 1rem; }
-      #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-desc {
-        padding: .25em; }
-      #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-addr {
-        padding: .25em; }
-      #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-links {
-        text-align: right; }
-        #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-links .map-links {
-          font-family: "Roboto";
-          display: inline-block;
-          padding: 3px;
-          text-align: center;
-          color: #25346d; }
-          #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-links .map-links:first-child {
-            border-right: 1px solid #25346d; }
-          #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-links .map-links:last-child {
-            margin-right: 0; }
-          #cc-info .location-wrapper .cc-location-table-row .cc-location-table-row-links .map-links a .fa {
-            padding-left: 3px; }
-    #cc-info .location-wrapper .cc-footer {
-      background-color: #090a0a;
-      text-align: center;
-      color: #fbfbfc; }
-      #cc-info .location-wrapper .cc-footer .cc-footer-text {
-        font-size: .75em;
-        padding: 1em 0; }
-        #cc-info .location-wrapper .cc-footer .cc-footer-text p {
-          margin: 0 !important; }
-          #cc-info .location-wrapper .cc-footer .cc-footer-text p a {
-            color: #ccc; }
-            #cc-info .location-wrapper .cc-footer .cc-footer-text p a:visited {
-              color: #ccc; }
-            #cc-info .location-wrapper .cc-footer .cc-footer-text p a:hover, #cc-info .location-wrapper .cc-footer .cc-footer-text p a:active, #cc-info .location-wrapper .cc-footer .cc-footer-text p a:focus {
-              color: #9d9d9d; }
