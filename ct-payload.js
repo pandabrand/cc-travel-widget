@@ -16,53 +16,6 @@
 
           city_coord = city.location;
 
-          //make title
-          let header_div = document.createElement('div');
-          header_div.className = 'cc-header';
-
-          let header_img_div = document.createElement('div');
-          header_img_div.className = 'cc-header-silver-image';
-          // let header_img = document.createElement('img');
-          // header_img.src = 'http://collidetravel.com/images/flat-logo-inline-white-250px.png';
-          // header_img_div.appendChild(header_img);
-
-          let header_title_div = document.createElement('div');
-          header_title_div.className = 'cc-flex-item cc-header-item cc-header-title';
-          // let header_img_link = document.createElement('a');
-          // header_img_link.href = 'http://collidetravel.com/';
-          // header_img_link.target = '_blank';
-          //
-          // let header_img = document.createElement('img');
-          // header_img.src = 'http://collidetravel.com/images/new-logo-inverse.png';
-          // header_img_link.appendChild(header_img);
-          // header_title_div.appendChild(header_img_link);
-          // header_title_div.appendChild(document.createTextNode('Collide Travel Guide:'));
-
-          let header_text_div = document.createElement('div');
-          header_text_div.className = 'cc-flex-item cc-header-item cc-header-text';
-          header_sub_title = document.createElement('div');
-          header_sub_title.className = 'cc-subheader';
-          // header_link.href = 'http://collidetravel.com/city/'+city.cityName;
-          // header_link.target = '_blank';
-          header_sub_title.appendChild(document.createTextNode('Let us help! We have the inside scoop.'));
-          let header_title_element = document.createElement('div');
-          header_title_element.appendChild(document.createTextNode('Need things to do in ' + city.displayName + '?'));
-          header_title_element.className = 'cc-header';
-          header_text_div.appendChild(header_title_element);
-          header_text_div.appendChild(header_sub_title);
-          // header_div.appendChild(header_img_div);
-          // header_div.appendChild(header_title_div);
-          // header_div.appendChild(header_text_div);
-          // cc_info.appendChild(header_div);
-          cc_info.appendChild(header_text_div);
-          cc_info.appendChild(header_title_div);
-
-          //city image div
-          let city_image_div = document.createElement('div');
-          city_image_div.className = 'cc-flex-item cc-body cc-image';
-          city_image = $.cloudinary.image(city.guidePreview, {cloud_name: 'hjoyay5gd', width:'auto', dpr:'auto', responsive_placeholder: 'blank'});
-          $(city_image_div).append(city_image);
-          cc_info.appendChild(city_image_div);
 
           //create location scoller
           let location_scroller_div = document.createElement('div');
