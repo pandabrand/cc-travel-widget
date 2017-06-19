@@ -7,7 +7,7 @@
     if(!cc_info || !cc_data_city) {
       return;
     } else {
-      let cc_url = 'http://www.collidetravel.com/cc-city/'.concat(cc_data_city);
+      let cc_url = 'https://www.collidetravel.com/cc-city/'.concat(cc_data_city);
       $.ajax({
         type: 'GET',
         url: cc_url,
@@ -77,7 +77,7 @@
                   let artist = artists_with_location[y];
                   let comment = _.find(comments, {locationId: locations._id, artistId: artist._id});
                   let location_artist_comment_link = document.createElement('a');
-                  location_artist_comment_link.href = 'http://collidetravel.com/city/'+city.cityName+'/artist/'+artist.artistSlug;
+                  location_artist_comment_link.href = 'https://www.collidetravel.com/city/'+city.cityName+'/artist/'+artist.artistSlug;
                   location_artist_comment_link.target = '_blank';
                   location_artist_comment_link.className = 'cc-link';
                   if(comment) {
@@ -151,7 +151,7 @@
 
           let footer_text_div = document.createElement('div');
           footer_text_div.className = 'cc-footer-text';
-          let footer_str = '<p>Find even more at <a href="http://collidetravel.com/" target="_blank">Collide Travel</a></p>';
+          let footer_str = '<p>Find even more at <a href="https://www.collidetravel.com/" target="_blank">Collide Travel</a></p>';
           footer_text_div.innerHTML = footer_str;
           footer_div.appendChild(footer_text_div);
           cc_info.appendChild(footer_div);
